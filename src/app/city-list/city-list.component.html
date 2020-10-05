@@ -1,1 +1,3 @@
-<p>city-list works!</p>
+<div class="city-list">
+    <div *ngFor="let city of cities" (click)="getWeather()" class="city-el">{{ city }}</div>
+</div>

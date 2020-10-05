@@ -1,0 +1,5 @@
+.weather-block{
+    display: flex;
+    
+    border: 1px green solid;
+}
