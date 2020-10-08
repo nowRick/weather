@@ -1,0 +1,31 @@
+.weather-block{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid DimGray;
+    padding-left: 10px;
+}
+
+.weather-block-header{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: DarkTurquoise;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.weather-block-info{
+    padding-left: 10 px;
+}
+
+.weather-block-el{
+    font-size: 16px;
+    padding: 10px 0px;
+    color: DimGray;
+    font-weight: bold;
+}
+
+img{
+    width: 32px;
+    height: 32px;
+}

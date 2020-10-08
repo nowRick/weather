@@ -1,0 +1,12 @@
+.city-list{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px red solid; */
+}
+
+app-city:hover, app-city.selected{
+    cursor: pointer;
+    background-color: DarkTurquoise;
+    color: white;
+    border-radius: 3px;
+}

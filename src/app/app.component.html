@@ -1,5 +1,10 @@
 <div class="container">
+
   <app-header></app-header>
-  <app-city-list></app-city-list>
-  <app-weather></app-weather>
+
+  <div class="content">
+    <app-city-list (citySelected)="setResponse($event)"></app-city-list>
+    <app-weather *ngIf="show" [response]="response"></app-weather>
+  </div>
+
 </div>
