@@ -1,17 +1,35 @@
 import { Injectable } from '@angular/core';
 
+export interface City {
+  name: string;
+  woeid: number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
-  private cities: string[] = ["Moscow", "St Petersburg", "Kiev", "Minsk"];
 
-// Moscow,        2122265
-// St Petersburg, 2123260
-// Kiev,          924938
-// Minsk,         834463
+  private cities: City[] = [ 
+    {
+      name: "Moscow",
+      woeid: 2122265,
+    },
+    {
+      name: "St Petersburg",
+      woeid: 2123260,
+    },
+    {
+      name: "Kiev",
+      woeid: 924938,
+    },
+    {
+      name: "Minsk",
+      woeid: 834463,
+    }
+  ];
 
-  getCities(): string[] {
+  getCities(): City[] {
     return this.cities;
   }
 

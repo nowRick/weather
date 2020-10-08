@@ -1,20 +1,12 @@
 .city-list{
-    --color-blue: DarkTurquoise;
-    --color-white: white;
-
     display: flex;
     flex-direction: column;
     /* border: 1px red solid; */
 }
 
-.city-el{
-    padding: 10px;
-    color: var(--color-blue);
-}
-
-.city-el:hover{
+app-city:hover, app-city.selected{
     cursor: pointer;
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: DarkTurquoise;
+    color: white;
     border-radius: 3px;
 }

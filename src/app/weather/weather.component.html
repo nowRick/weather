@@ -1,9 +1,21 @@
 <div class="weather-block">
     <div class="weather-block-header">
-        Weather in Moscow
+        Weather on {{ response.time | date:'medium' }} in {{ response.title }}
+        <img [src]="imgSrc">
     </div>
 
     <div class="weather-block-info">
-        
+        <div  class="weather-block-el">
+            Weather state name: {{ response.consolidated_weather[0].weather_state_name }}
+        </div>
+        <div  class="weather-block-el">
+            Temperature: {{ response.consolidated_weather[0].the_temp | number:'1.0-0'}} 	&#176;С
+        </div>
+        <div  class="weather-block-el">
+            Wind speed: {{ response.consolidated_weather[0].wind_speed | number:'1.0-0'}} mph
+        </div>
+        <div  class="weather-block-el">
+            Humidity: {{ response.consolidated_weather[0].humidity | number:'1.0-0' }} %
+        </div>
     </div>
 </div>
